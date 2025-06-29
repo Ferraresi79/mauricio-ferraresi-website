@@ -40,17 +40,17 @@ export default function Profile() {
     </div>
     
     <div className="lg:hidden w-full max-w-md">
-      <div className="bg-gradient-to-b from-blue-900 to-blue-800 rounded-3xl p-6 space-y-3">
-        <h3 className="text-xl font-bold text-blue-100 mb-4 text-center">Navigation</h3>
+      <div className="bg-gradient-to-b from-slate-900 to-slate-800 rounded-3xl p-6 space-y-3">
+        <h3 className="text-xl font-bold text-slate-100 mb-4 text-center">Navigation</h3>
         {sections.map((section) => (
           <button
             key={section.path}
-            className="w-full text-left px-4 py-3 rounded-lg hover:bg-blue-700 hover:bg-opacity-50 
+            className="w-full text-left px-4 py-3 rounded-lg hover:bg-slate-700 hover:bg-opacity-50 
                      transition-all duration-200 group
-                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                     focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-opacity-50"
             onClick={() => navigateToPath(section.path)}
           >
-            <span className="font-medium text-blue-100 group-hover:text-white transition-colors">
+            <span className="font-medium text-slate-100 group-hover:text-white transition-colors">
               {section.name}
             </span>
           </button>

@@ -9,14 +9,14 @@ export default function CurriculumVitae() {
       <div className="mb-8">
         <div className="bg-white rounded-lg shadow-lg p-4">
           <iframe
-            src="/cv.pdf"
+            src="https://docs.google.com/gview?url=https://www.dropbox.com/scl/fi/u17knrh4hspxqc145x8p1/CV.pdf?rlkey=29fedm3ta6tw5bqfp6lsn4ylk%26e=1%26st=9psvdvi9%26dl=1&embedded=true"
             width="100%"
             height="800px"
             className="border-0 rounded"
             title="Curriculum Vitae PDF"
           >
             <p>Your browser does not support PDFs. 
-              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.dropbox.com/scl/fi/u17knrh4hspxqc145x8p1/CV.pdf?rlkey=29fedm3ta6tw5bqfp6lsn4ylk&e=1&st=9psvdvi9&dl=1" target="_blank" rel="noopener noreferrer">
                 Download the PDF
               </a>
             </p>

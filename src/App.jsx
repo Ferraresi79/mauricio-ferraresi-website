@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Profile from './Profile';
 import CurriculumVitae from './CurriculumVitae';
+import WorkingPapers from './WorkingPapers';
 import Miscellaneous from './Miscellaneous';
 
 export default function App() {
@@ -22,6 +23,8 @@ export default function App() {
     MainContent = <Profile />;
   } else if (path === '/curriculum-vitae') {
     MainContent = <CurriculumVitae />;
+  } else if (path === '/working-papers') {
+    MainContent = <WorkingPapers />;
   } else if (path === '/miscellaneous') {
     MainContent = <Miscellaneous />;
   } else {
