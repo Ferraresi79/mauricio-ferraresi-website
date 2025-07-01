@@ -4,7 +4,7 @@ const sections = [
   { name: 'Profile', path: '/' },
   { name: 'Curriculum Vitae', path: '/curriculum-vitae' },
   { name: 'Working Papers', path: '/working-papers' },
-  { name: 'Research', path: '/research' },
+  { name: 'Research Agenda', path: '/research' },
   { name: 'Miscellaneous', path: '/miscellaneous' },
 ];
 
@@ -42,7 +42,7 @@ export default function Sidebar({ isOpen, onClose }) {
             </button>
             
             <h2 className="text-2xl font-bold text-slate-100">Mauricio Ferraresi</h2>
-            <p className="text-slate-300 text-sm mt-1">PhD Candidate</p>
+            <p className="text-slate-300 text-sm mt-1">São Paulo School of Economics</p>
           </div>
           
           <nav className="flex-1 p-4 space-y-2">

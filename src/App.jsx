@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 import Profile from './Profile';
 import CurriculumVitae from './CurriculumVitae';
 import WorkingPapers from './WorkingPapers';
+import Research from './Research';
 import Miscellaneous from './Miscellaneous';
 
 export default function App() {
@@ -25,6 +26,8 @@ export default function App() {
     MainContent = <CurriculumVitae />;
   } else if (path === '/working-papers') {
     MainContent = <WorkingPapers />;
+  } else if (path === '/research') {
+    MainContent = <Research />;
   } else if (path === '/miscellaneous') {
     MainContent = <Miscellaneous />;
   } else {

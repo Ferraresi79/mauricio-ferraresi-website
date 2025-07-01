@@ -19,7 +19,6 @@ export default function Profile() {
     <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6">Mauricio Ferraresi</h1>
     <div className="flex flex-col lg:flex-row items-center justify-center min-h-[60vh] gap-12">
       <div className="flex flex-col items-center lg:items-end text-center lg:text-right space-y-2 flex-1">
-        <div className="text-2xl md:text-3xl text-gray-900 font-normal">PhD Candidate</div>
         <div className="text-2xl md:text-3xl text-gray-900 font-normal">Job market paper for 2025-2026</div>
         
         <div className="hidden lg:block mt-6">

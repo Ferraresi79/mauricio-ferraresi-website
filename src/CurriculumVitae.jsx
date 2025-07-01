@@ -16,7 +16,7 @@ export default function CurriculumVitae() {
             title="Curriculum Vitae PDF"
           >
             <p>Your browser does not support PDFs. 
-              <a href="https://www.dropbox.com/scl/fi/u17knrh4hspxqc145x8p1/CV.pdf?rlkey=29fedm3ta6tw5bqfp6lsn4ylk&e=1&st=9psvdvi9&dl=1" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.dropbox.com/scl/fo/72p8jkhgzumyj3ibv7a5f/AJ6Os6NA3rByJPJ9itL89f0?dl=1&e=1&preview=CV.pdf&rlkey=vh13prjnfng1ptlsqh5syv6y9&st=e5mqhlfu" target="_blank" rel="noopener noreferrer">
                 Download the PDF
               </a>
             </p>

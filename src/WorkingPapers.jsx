@@ -9,18 +9,15 @@ export default function WorkingPapers() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left Column - PDFs */}
         <div className="space-y-8">
-          {/* First Working Paper */}
+          <PdfRenderer 
+            title="Replicant Investment Platforms (Job Market Paper)"
+            pdfUrl="https://www.dropbox.com/scl/fi/m1uu0nyyyqyb12mcwfn97/Replicant_Investment_Platforms.pdf?rlkey=ffzslt64u3lbta0rknxqxbvqz&e=1&st=b4zjnn92&raw=1"
+            downloadUrl="https://www.dropbox.com/scl/fi/m1uu0nyyyqyb12mcwfn97/Replicant_Investment_Platforms.pdf?rlkey=ffzslt64u3lbta0rknxqxbvqz&e=1&st=b4zjnn92&dl=1"
+          />
           <PdfRenderer 
             title="Amplification and Performance from Exposure based Strategies"
             pdfUrl="https://www.dropbox.com/scl/fi/dar2cutl6vofqycjmuff3/Amplification_and_Performance_from_Exposure_based_Strategies.pdf?rlkey=xob4e8mjz2dmqlxu4yybarbqw&st=4z89uzdh&raw=1"
             downloadUrl="https://www.dropbox.com/scl/fi/dar2cutl6vofqycjmuff3/Amplification_and_Performance_from_Exposure_based_Strategies.pdf?rlkey=xob4e8mjz2dmqlxu4yybarbqw&st=4z89uzdh&dl=1"
-          />
-
-          {/* Second Working Paper */}
-          <PdfRenderer 
-            title="Replicant Investment Platforms"
-            pdfUrl="https://www.dropbox.com/scl/fi/m1uu0nyyyqyb12mcwfn97/Replicant_Investment_Platforms.pdf?rlkey=ffzslt64u3lbta0rknxqxbvqz&e=1&st=b4zjnn92&raw=1"
-            downloadUrl="https://www.dropbox.com/scl/fi/m1uu0nyyyqyb12mcwfn97/Replicant_Investment_Platforms.pdf?rlkey=ffzslt64u3lbta0rknxqxbvqz&e=1&st=b4zjnn92&dl=1"
           />
         </div>
 

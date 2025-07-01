@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fernando-Urbano/mauricio-ferraresi-website.git"
+    "url": "git+https://github.com/Ferraresi79/mauricio-ferraresi-website.git"
   },
   "keywords": [
     "website",
@@ -21,9 +21,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Fernando-Urbano/mauricio-ferraresi-website/issues"
+    "url": "https://github.com/Ferraresi79/mauricio-ferraresi-website/issues"
   },
-  "homepage": "https://github.com/Fernando-Urbano/mauricio-ferraresi-website#readme",
+  "homepage": "https://Ferraresi79.github.io/mauricio-ferraresi-website",
   "devDependencies": {
     "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.21",
