@@ -1,10 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import SocialButtons from './SocialButtons';
 
 const SHOW_SOCIAL_BUTTONS = false;
 
 export default function Navbar({ onToggleSidebar }) {
-  const isMainPage = window.location.pathname === '/';
+  const location = useLocation();
+  const isMainPage = location.pathname === '/';
   
   return (
     <nav className={`

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Profile from './Profile';
@@ -6,6 +7,10 @@ import CurriculumVitae from './CurriculumVitae';
 import WorkingPapers from './WorkingPapers';
 import Research from './Research';
 import Miscellaneous from './Miscellaneous';
+
+function PageNotFound() {
+  return <div className="p-6">Page not found</div>;
+}
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,31 +23,24 @@ export default function App() {
     setSidebarOpen(false);
   };
 
-  const path = window.location.pathname;
-  let MainContent;
-  if (path === '/' || path === '') {
-    MainContent = <Profile />;
-  } else if (path === '/curriculum-vitae') {
-    MainContent = <CurriculumVitae />;
-  } else if (path === '/working-papers') {
-    MainContent = <WorkingPapers />;
-  } else if (path === '/research') {
-    MainContent = <Research />;
-  } else if (path === '/miscellaneous') {
-    MainContent = <Miscellaneous />;
-  } else {
-    MainContent = <div className="p-6">Page not found</div>;
-  }
-
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Navbar onToggleSidebar={toggleSidebar} />
-      <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
-      <main className="pt-16 lg:pt-16 lg:ml-64 min-h-screen">
-        <div className="p-6">
-          {MainContent}
-        </div>
-      </main>
-    </div>
+    <Router basename="/mauricio-ferraresi-website">
+      <div className="min-h-screen bg-gray-50">
+        <Navbar onToggleSidebar={toggleSidebar} />
+        <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
+        <main className="pt-16 lg:pt-16 lg:ml-64 min-h-screen">
+          <div className="p-6">
+            <Routes>
+              <Route path="/" element={<Profile />} />
+              <Route path="/curriculum-vitae" element={<CurriculumVitae />} />
+              <Route path="/working-papers" element={<WorkingPapers />} />
+              <Route path="/research" element={<Research />} />
+              <Route path="/miscellaneous" element={<Miscellaneous />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </div>
+        </main>
+      </div>
+    </Router>
   );
 } 

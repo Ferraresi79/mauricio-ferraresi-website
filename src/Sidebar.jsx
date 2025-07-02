@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const sections = [
   { name: 'Profile', path: '/' },
@@ -13,6 +14,8 @@ function navigateToPath(path) {
 }
 
 export default function Sidebar({ isOpen, onClose }) {
+  const location = useLocation();
+
   return (
     <>
       {isOpen && (
@@ -47,17 +50,19 @@ export default function Sidebar({ isOpen, onClose }) {
           
           <nav className="flex-1 p-4 space-y-2">
             {sections.map((section) => (
-              <button
+              <Link
                 key={section.path}
-                className="w-full text-left px-4 py-3 rounded-lg hover:bg-slate-700 hover:bg-opacity-50 
+                to={section.path}
+                onClick={onClose}
+                className={`w-full text-left block px-4 py-3 rounded-lg hover:bg-slate-700 hover:bg-opacity-50 
                          transition-all duration-200 group
-                         focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-opacity-50"
-                onClick={() => navigateToPath(section.path)}
+                         focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-opacity-50
+                         ${location.pathname === section.path ? 'bg-slate-700' : ''}`}
               >
                 <span className="font-medium text-slate-100 group-hover:text-white transition-colors">
                   {section.name}
                 </span>
-              </button>
+              </Link>
             ))}
           </nav>
           
