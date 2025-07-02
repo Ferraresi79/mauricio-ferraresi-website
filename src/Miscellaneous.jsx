@@ -1,5 +1,8 @@
 import React from 'react';
 import PdfRenderer from './components/PdfRenderer';
+import miscelleneous01 from '/miscelleneous01.jpeg';
+import miscelleneous02 from '/miscelleneous02.jpeg';
+import miscelleneous03 from '/miscelleneous03.jpeg';
 
 const bulletPoints = [
   "Researcher in demand-based asset pricing and financial intermediation based on fund networks",
@@ -81,7 +84,7 @@ export default function Miscellaneous() {
         <div className="space-y-6">
           <div className="bg-white rounded-lg shadow-lg p-4">
             <img
-              src="/miscelleneous01.jpeg"
+              src={miscelleneous01}
               alt="Miscellaneous Image 1"
               className="w-full h-auto rounded"
             />
@@ -89,7 +92,7 @@ export default function Miscellaneous() {
           
           <div className="bg-white rounded-lg shadow-lg p-4">
             <img
-              src="/miscelleneous02.jpeg"
+              src={miscelleneous02}
               alt="Miscellaneous Image 2"
               className="w-full h-auto rounded"
             />
@@ -97,7 +100,7 @@ export default function Miscellaneous() {
           
           <div className="bg-white rounded-lg shadow-lg p-4">
             <img
-              src="/miscelleneous03.jpeg"
+              src={miscelleneous03}
               alt="Miscellaneous Image 3"
               className="w-full h-auto rounded"
             />

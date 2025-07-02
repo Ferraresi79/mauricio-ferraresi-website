@@ -1,5 +1,6 @@
 import React from 'react';
 import PdfRenderer from './components/PdfRenderer';
+import workingpaper01 from '/workingpaper01.jpeg';
 
 export default function WorkingPapers() {
   return (
@@ -25,7 +26,7 @@ export default function WorkingPapers() {
         <div className="flex justify-center lg:justify-start">
           <div className="bg-white rounded-lg shadow-lg p-4 h-fit">
             <img
-              src="/workingpaper01.jpeg"
+              src={workingpaper01}
               alt="Working Papers"
               className="w-full h-auto rounded"
             />

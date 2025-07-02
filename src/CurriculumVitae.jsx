@@ -1,4 +1,6 @@
 import React from 'react';
+import curriculum01 from '/curriculum01.jpeg';
+import curriculum02 from '/curriculum02.jpeg';
 
 export default function CurriculumVitae() {
   return (
@@ -28,16 +30,16 @@ export default function CurriculumVitae() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white rounded-lg shadow-lg p-4">
           <img
-            src="/curriculum02.jpeg"
-            alt="Curriculum Page 2"
+            src={curriculum02}
+            alt="Curriculum Image 2"
             className="w-full h-auto rounded"
           />
         </div>
         
         <div className="bg-white rounded-lg shadow-lg p-4">
           <img
-            src="/curriculum01.jpeg"
-            alt="Curriculum Page 1"
+            src={curriculum01}
+            alt="Curriculum Image 1"
             className="w-full h-auto rounded"
           />
         </div>
