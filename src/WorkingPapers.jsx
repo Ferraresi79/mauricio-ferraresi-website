@@ -1,6 +1,6 @@
 import React from 'react';
 import PdfRenderer from './components/PdfRenderer';
-import workingpaper01 from '/workingpaper01.jpeg';
+import workingpaper01 from '../public/workingpaper01.jpeg';
 
 export default function WorkingPapers() {
   return (

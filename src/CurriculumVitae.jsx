@@ -1,6 +1,6 @@
 import React from 'react';
-import curriculum01 from '/curriculum01.jpeg';
-import curriculum02 from '/curriculum02.jpeg';
+import curriculum01 from '../public/curriculum01.jpeg';
+import curriculum02 from '../public/curriculum02.jpeg';
 
 export default function CurriculumVitae() {
   return (

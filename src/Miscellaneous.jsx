@@ -1,8 +1,8 @@
 import React from 'react';
 import PdfRenderer from './components/PdfRenderer';
-import miscelleneous01 from '/miscelleneous01.jpeg';
-import miscelleneous02 from '/miscelleneous02.jpeg';
-import miscelleneous03 from '/miscelleneous03.jpeg';
+import miscelleneous01 from '../public/miscelleneous01.jpeg';
+import miscelleneous02 from '../public/miscelleneous02.jpeg';
+import miscelleneous03 from '../public/miscelleneous03.jpeg';
 
 const bulletPoints = [
   "Researcher in demand-based asset pricing and financial intermediation based on fund networks",

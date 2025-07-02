@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SocialButtons from './SocialButtons';
-import profileImage from '/profile.jpeg';
+import profileImage from '../public/profile.jpeg';
 
 const sections = [
   { name: 'Profile', path: '/' },
