@@ -3,7 +3,20 @@ import React from 'react';
 export default function SocialButtons({ className = "" }) {
   return (
     <div className={`flex flex-col gap-3 ${className}`}>
-      <div className="flex flex-row gap-3">
+      <a
+        href="https://www.dropbox.com/scl/fo/gum9iig9ub70ti6j7nx10/AFYfZWn6DNC_Ml2xD2FjxZ0/Replicant%20Investment%20Platforms?dl=0&preview=Replicant_Investment_Platforms.pdf&rlkey=22uq9itq8qppmk9mu6jsde9qp&subfolder_nav_tracking=1"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center px-6 py-3 bg-slate-800 text-white rounded-full hover:bg-slate-700 
+                 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-opacity-50"
+      >
+        <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
+        </svg>
+        Read "Replicant Investment Platforms"
+      </a>
+      
+      <div className="flex flex-col lg:flex-row gap-3">
         <a
           href="https://github.com/Ferraresi79"
           target="_blank"
@@ -42,20 +55,20 @@ export default function SocialButtons({ className = "" }) {
           </svg>
           Google Scholar
         </a>
+        
+        <a
+          href="https://bv.fapesp.br/pt/pesquisador/726670/mauricio-ferraresi-junior/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-6 py-3 bg-teal-800 text-white rounded-full hover:bg-teal-700 
+                   transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
+        >
+          <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+          FAPESP
+        </a>
       </div>
-      
-      <a
-        href="https://www.dropbox.com/scl/fo/gum9iig9ub70ti6j7nx10/AFYfZWn6DNC_Ml2xD2FjxZ0/Replicant%20Investment%20Platforms?dl=0&preview=Replicant_Investment_Platforms.pdf&rlkey=22uq9itq8qppmk9mu6jsde9qp&subfolder_nav_tracking=1"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center px-6 py-3 bg-slate-800 text-white rounded-full hover:bg-slate-700 
-                 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-opacity-50"
-      >
-        <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
-        </svg>
-        Read "Replicant Investment Platforms"
-      </a>
     </div>
   );
 } 

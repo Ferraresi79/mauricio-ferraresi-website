@@ -45,7 +45,8 @@ export default function Sidebar({ isOpen, onClose }) {
             </button>
             
             <h2 className="text-2xl font-bold text-slate-100">Mauricio Ferraresi</h2>
-            <p className="text-slate-300 text-sm mt-1">São Paulo School of Economics</p>
+            <p className="text-slate-300 text-sm mt-1">Sao Paulo School of Economics</p>
+            <p className="text-slate-300 text-sm mt-1">mauricio.ferraresi@fgv.br</p>
           </div>
           
           <nav className="flex-1 p-4 space-y-2">
@@ -68,7 +69,7 @@ export default function Sidebar({ isOpen, onClose }) {
           
           <div className="p-4 border-t border-slate-700">
             <p className="text-slate-300 text-xs text-center">
-              © 2024 Mauricio Ferraresi
+              © Mauricio Ferraresi
             </p>
           </div>
         </div>
