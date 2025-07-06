@@ -72,11 +72,11 @@ export default function Miscellaneous() {
             </div>
           </div>
 
-          <PdfRenderer 
+          {/* <PdfRenderer 
             title="Essays on Risk in Asset Management (Thesis defense date: July 22, 2025)"
             pdfUrl="https://www.dropbox.com/scl/fi/bj6kmdd5sfgzn6nlhu819/Mauricio_Thesis.pdf?rlkey=92d064isyyw99rp9bqysl3f97&e=1&st=899nky09&raw=1"
             downloadUrl="https://www.dropbox.com/scl/fi/bj6kmdd5sfgzn6nlhu819/Mauricio_Thesis.pdf?rlkey=92d064isyyw99rp9bqysl3f97&e=1&st=899nky09&dl=1"
-          />
+          /> */}
         </div>
 
         {/* Right Column - Images */}
